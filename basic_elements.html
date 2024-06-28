@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Corona Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../template/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../template/assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="../template/assets/vendors/select2/select2.min.css">
+    <link rel="stylesheet" href="../template/assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../template/assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../template/assets/images/logo3.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="../template/dashboard.html"><img src="../template/assets/images/logo2.png" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="../template/index.html"><img src="../template/assets/images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="../template/assets/images/face13.jpg" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">Samuel Lastre</h5>
+                  <span>Bienvenido!</span>
+                </div>
+              </div>
+              <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-settings text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Configuraciones de la cuenta</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-onepassword  text-info"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Cambiar la contraseña</p>
+                  </div>
+                </a>
+                
+              </div>
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Navegación</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../template/dashboard.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Inicio</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../template/buttons.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">Pacientes</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="basic_elements.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">Personal Medico</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../template/basic-table.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">Citas Medicas</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../template/chartjs.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-bar"></i>
+              </span>
+              <span class="menu-title">Orden Medica</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../template/mdi.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-contacts"></i>
+              </span>
+              <span class="menu-title">Receta Medica</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../template/login.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-security"></i>
+              </span>
+              <span class="menu-title">Cerrar Sección</span>
+            </a>
+          </li>
+          
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                  <input type="text" class="form-control" placeholder="Buscar ">
+                </form>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <i class="mdi mdi-email"></i>
+                  <span class="count bg-success"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                  <h6 class="p-3 mb-0">Mensajes</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="../../assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Daniel te envio un mensaje</p>
+                      <p class="text-muted mb-0"> Hace 1 minutos </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="../../assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Ever te envio un mensaje</p>
+                      <p class="text-muted mb-0">Hace 18 minutos</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="../../assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Foto de perfil actualizada</p>
+                      <p class="text-muted mb-0"> Hace 38 minutos </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">4 mensajes nuevos</p>
+                </div>
+              </li>
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="mdi mdi-bell"></i>
+                  <span class="count bg-danger"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <h6 class="p-3 mb-0">Notificaciones</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-calendar text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Evento de hoy</p>
+                      <p class="text-muted ellipsis mb-0"> Sólo un recordatorio de que tienes un evento hoy. </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Ajustes</p>
+                      <p class="text-muted ellipsis mb-0">Actualizar panel </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-link-variant text-warning"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Iniciar administrador</p>
+                      <p class="text-muted ellipsis mb-0"> Nuevo administrador ¡guau!</p>
+                    </div>
+                  </a>
+                  
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <img class="img-xs rounded-circle" src="../template/assets/images/face13.jpg" alt="">
+                    <p class="mb-10 d-none d-sm-block navbar-profile-name">Samuel Lastre</p>
+                    
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                  <h6 class="p-3 mb-0">Perfil</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Ajustes</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Cerrar sesión</p>
+                    </div>
+                  </a>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>Nuevo Personal Medico</h1>
+            <input type="date" class="form-control w-auto" placeholder="20 de Junio 2024">
+        </div>
+            <div class="row">
+              
+              <div class="col-12 grid-margin stretch-card">
+                
+                <div class="card">
+                  
+                  <div class="card-body">
+                    
+                    <form>
+                      <!-- Nombres -->
+                      <div class="row mb-3">
+                        <div class="col">
+                          <label for="primer-nombre" class="form-label">Primer nombre*</label>
+                          <input type="text" class="form-control" id="primer-nombre" placeholder="Primer nombre" required>
+                        </div>
+                        <div class="col">
+                          <label for="segundo-nombre" class="form-label">Segundo nombre</label>
+                          <input type="text" class="form-control" id="segundo-nombre" placeholder="Segundo nombre">
+                        </div>
+                      </div>
+              
+                      <!-- Apellidos -->
+                      <div class="row mb-3">
+                        <div class="col">
+                          <label for="primer-apellido" class="form-label">Primer apellido*</label>
+                          <input type="text" class="form-control" id="primer-apellido" placeholder="Primer apellido" required>
+                        </div>
+                        <div class="col">
+                          <label for="segundo-apellido" class="form-label">Segundo apellido</label>
+                          <input type="text" class="form-control" id="segundo-apellido" placeholder="Segundo apellido">
+                        </div>
+                      </div>
+              
+                      <!-- Documentos -->
+                      <div class="mb-3">
+                        <label for="tipo-documento" class="form-label">Tipo de documento*</label>
+                        <select class="form-select" id="tipo-documento" required>
+                          <option selected disabled>- Seleccionar -</option>
+                          <option value="CC">Cédula de Ciudadanía</option>
+                          <option value="TI">Tarjeta de Identidad</option>
+                          <option value="CE">Cédula de Extranjería</option>
+                          <option value="PA">Pasaporte</option>
+                        </select>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label for="numero-documento" class="form-label">No. de Documento*</label>
+                        <input type="text" class="form-control" id="numero-documento" placeholder="Número de Documento" required>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label for="numero-registro-medico" class="form-label">Número de Registro Médico</label>
+                        <input type="text" class="form-control" id="numero-registro-medico" placeholder="Número de Registro Médico" required>
+                      </div>
+              
+                      <!-- Especialidad -->
+                      <div class="mb-3">
+                        <label for="especialidad" class="form-label">Especialidad*</label>
+                        <select class="form-select" id="especialidad" required>
+                          <option selected disabled>- Seleccionar -</option>
+                          <option value="Medicina General">Medicina General</option>
+                          <option value="Cardiología">Cardiología</option>
+                          <option value="Dermatología">Dermatología</option>
+                          <option value="Ginecología">Ginecología</option>
+                          <option value="Pediatría">Pediatría</option>
+                          <option value="Psiquiatría">Psiquiatría</option>
+                          <option value="Oftalmología">Oftalmología</option>
+                          <option value="Neurología">Neurología</option>
+                          <option value="Traumatología">Traumatología</option>
+                          <!-- Agregar más especialidades según sea necesario -->
+                        </select>
+                      </div>
+              
+                      <!-- Residencia -->
+                      <div class="row mb-3">
+                        <div class="col-md-6">
+                          <label for="departamento" class="form-label">Departamento donde reside*</label>
+                          <select class="form-select" id="departamento" required>
+                            <option selected disabled>- Seleccionar -</option>
+                            <option value="Antioquia">Antioquia</option>
+                            <option value="Bogotá">Bogotá</option>
+                            <option value="Cundinamarca">Cundinamarca</option>
+                            <!-- Agregar más opciones según sea necesario -->
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="ciudad" class="form-label">Ciudad donde reside*</label>
+                          <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" required>
+                        </div>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label for="direccion" class="form-label">Dirección donde reside*</label>
+                        <input type="text" class="form-control" id="direccion" placeholder="Dirección" required>
+                      </div>
+              
+                      <!-- Teléfonos -->
+                      <div class="row mb-3">
+                        <div class="col-md-6">
+                          <label for="telefono" class="form-label">Teléfono</label>
+                          <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="celular" class="form-label">Celular*</label>
+                          <input type="tel" class="form-control" id="celular" placeholder="Celular" required>
+                        </div>
+                      </div>
+              
+                      <!-- Correos Electrónicos -->
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico*</label>
+                        <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="confirmar-email" class="form-label">Confirmar Correo Electrónico*</label>
+                        <input type="email" class="form-control" id="confirmar-email" placeholder="confirmar correo@ejemplo.com" required>
+                      </div>
+              
+                      <!-- Sexo -->
+                      <div class="mb-3">
+                        <label for="sexo" class="form-label">Sexo*</label>
+                        <select class="form-select" id="sexo" required>
+                          <option selected disabled>- Seleccionar -</option>
+                          <option value="Masculino">Masculino</option>
+                          <option value="Femenino">Femenino</option>
+                          <option value="Otro">Otro</option>
+                        </select>
+                      </div>
+              
+                      <!-- Grupo Sanguíneo -->
+                      <div class="mb-3">
+                        <label for="grupo-sanguineo" class="form-label">Grupo Sanguíneo*</label>
+                        <select class="form-select" id="grupo-sanguineo" required>
+                          <option selected disabled>- Seleccionar -</option>
+                          <option value="A+">A+</option>            
+                          <option value="A-">A-</option>
+                          <option value="B+">B+</option>
+                          <option value="B-">B-</option>
+                          <option value="AB+">AB+</option>
+                          <option value="AB-">AB-</option>
+                          <option value="O+">O+</option>
+                          <option value="O-">O-</option>
+                        </select>
+                      </div>
+              
+                      <!-- Adjuntar documento de identidad -->
+                      <div class="mb-3">
+                        <label for="documento-identidad" class="form-label">Adjuntar documento de identidad*</label>
+                        <input class="form-control" type="file" id="documento-identidad" accept=".txt,.rtf,.pdf,.doc,.docx,.odt,.ppt,.pptx,.odp,.xls,.xlsx,.ods,.jpg" required>
+                        <div class="form-text">Máximo 1 fichero, límite de 25 MB, tipos permitidos: txt, rtf, pdf, doc, docx, odt, ppt, pptx, odp, xls, xlsx, ods, jpg.</div>
+                      </div>
+              
+                      <!-- Autorización de tratamientos de datos -->
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="autorizacion-datos" required>
+                        <label class="form-check-label" for="autorizacion-datos">Acepto el tratamiento y la Política de Protección de Datos Personales Servicios</label>
+                      </div>
+              
+                      <!-- Botón de envío -->
+                      <button type="submit" class="btn btn-primary">Registrar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+             
+          <!-- content-wrapper ends -->
+
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="../../assets/vendors/select2/select2.min.js"></script>
+    <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="../../assets/js/file-upload.js"></script>
+    <script src="../../assets/js/typeahead.js"></script>
+    <script src="../../assets/js/select2.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>

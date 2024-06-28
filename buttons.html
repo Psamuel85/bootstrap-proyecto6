@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SaludproX</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../template/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../template/assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End Plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../template/assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../template/assets/images/logo3.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="../template/dashboard.html"><img src="../template/assets/images/logo2.png" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="../../index.html"><img src="../template/assets/images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="../template/assets/images/face13.jpg" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">Samuel Lastre</h5>
+                  <span>Bienvenido!</span>
+                </div>
+              </div>
+              <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-settings text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Configuraciones de la cuenta</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-calendar-today text-success"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Lista de quehaceres</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Navegación</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../template/dashboard.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Inicio</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="buttons.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">Pacientes</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../template/basic_elements.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">Personal Medico</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../template/basic-table.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">Citas Medicas</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../template/chartjs.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-bar"></i>
+              </span>
+              <span class="menu-title">Orden Medica</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../template/mdi.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-contacts"></i>
+              </span>
+              <span class="menu-title">Receta Medica</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../template/login.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-security"></i>
+              </span>
+              <span class="menu-title">Cerrar Sección</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                  <input type="text" class="form-control" placeholder="Search products">
+                </form>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <i class="mdi mdi-email"></i>
+                  <span class="count bg-success"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                  <h6 class="p-3 mb-0">Messages</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="../../assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Mark send you a message</p>
+                      <p class="text-muted mb-0"> 1 Minutes ago </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="../../assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
+                      <p class="text-muted mb-0"> 15 Minutes ago </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="../../assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
+                      <p class="text-muted mb-0"> 18 Minutes ago </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">4 new messages</p>
+                </div>
+              </li>
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="mdi mdi-bell"></i>
+                  <span class="count bg-danger"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <h6 class="p-3 mb-0">Notifications</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-calendar text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Event today</p>
+                      <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                      <p class="text-muted ellipsis mb-0"> Update dashboard </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-link-variant text-warning"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Launch Admin</p>
+                      <p class="text-muted ellipsis mb-0"> New admin wow! </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">See all notifications</p>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <img class="img-xs rounded-circle" src="../template/assets/images/face13.jpg" alt="">
+                    <p class="mb-10 d-none d-sm-block navbar-profile-name">Samuel Lastre</p>
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                  <h6 class="p-3 mb-0">Profile</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>Nuevo Paciente</h1>
+            <input type="date" class="form-control w-auto" placeholder="20 de Junio 2024">
+        </div>
+            <div class="row">
+              <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <form>
+                      <div class="tab-content" id="pills-tabContent">
+                        <!-- Información Personal -->
+                        <div class="tab-pane fade show active form-section" id="pills-personal" role="tabpanel" aria-labelledby="pills-personal-tab">
+                          <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre del paciente" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="Apellido del paciente" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="tipoDocumento" class="form-label">Tipo de Documento</label>
+                            <select class="form-select" id="tipoDocumento" required>
+                              <option value="" disabled selected>Seleccione el tipo de documento</option>
+                              <option value="CC">Cédula de Ciudadanía</option>
+                              <option value="TI">Tarjeta de Identidad</option>
+                              <option value="CE">Cédula de Extranjería</option>
+                              <option value="PAS">Pasaporte</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="numeroIdentificacion" class="form-label">N° de Identificación</label>
+                            <input type="text" class="form-control" id="numeroIdentificacion" placeholder="Número de identificación" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" id="fechaNacimiento" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="genero" class="form-label">Género</label>
+                            <select class="form-select" id="genero" required>
+                              <option value="" disabled selected>Seleccione el género</option>
+                              <option value="masculino">Masculino</option>
+                              <option value="femenino">Femenino</option>
+                              <option value="otro">Otro</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="grupoSanguineo" class="form-label">Grupo Sanguíneo</label>
+                            <select class="form-select" id="grupoSanguineo" required>
+                              <option value="" disabled selected>Seleccione el grupo sanguíneo</option>
+                              <option value="A+">A+</option>
+                              <option value="A-">A-</option>
+                              <option value="B+">B+</option>
+                              <option value="B-">B-</option>
+                              <option value="AB+">AB+</option>
+                              <option value="AB-">AB-</option>
+                              <option value="O+">O+</option>
+                              <option value="O-">O-</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="estatura" class="form-label">Estatura (cm)</label>
+                            <input type="number" class="form-control" id="estatura" placeholder="Estatura en centímetros" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="peso" class="form-label">Peso (kg)</label>
+                            <input type="number" class="form-control" id="peso" placeholder="Peso en kilogramos" required>
+                          </div>
+                        </div>
+                        <!-- Información de Contacto -->
+                        <div class="tab-pane fade form-section" id="pills-contacto" role="tabpanel" aria-labelledby="pills-contacto-tab">
+                          <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" placeholder="Número de teléfono" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="direccion" placeholder="Dirección del paciente" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="departamento" class="form-label">Departamento</label>
+                            <select class="form-select" id="departamento" required>
+                              <option value="" disabled selected>Seleccione el departamento</option>
+                              <option value="Amazonas">Amazonas</option>
+                              <option value="Antioquia">Antioquia</option>
+                              <option value="Arauca">Arauca</option>
+                              <option value="Atlántico">Atlántico</option>
+                              <option value="Bolívar">Bolívar</option>
+                              <option value="Boyacá">Boyacá</option>
+                              <option value="Caldas">Caldas</option>
+                              <option value="Caquetá">Caquetá</option>
+                              <option value="Casanare">Casanare</option>
+                              <option value="Cauca">Cauca</option>
+                              <option value="Cesar">Cesar</option>
+                              <option value="Chocó">Chocó</option>
+                              <option value="Córdoba">Córdoba</option>
+                              <option value="Cundinamarca">Cundinamarca</option>
+                              <option value="Guainía">Guainía</option>
+                              <option value="Guaviare">Guaviare</option>
+                              <option value="Huila">Huila</option>
+                              <option value="La Guajira">La Guajira</option>
+                              <option value="Magdalena">Magdalena</option>
+                              <option value="Meta">Meta</option>
+                              <option value="Nariño">Nariño</option>
+                              <option value="Norte de Santander">Norte de Santander</option>
+                              <option value="Putumayo">Putumayo</option>
+                              <option value="Quindío">Quindío</option>
+                              <option value="Risaralda">Risaralda</option>
+                              <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                              <option value="Santander">Santander</option>
+                              <option value="Sucre">Sucre</option>
+                              <option value="Tolima">Tolima</option>
+                              <option value="Valle del Cauca">Valle del Cauca</option>
+                              <option value="Vaupés">Vaupés</option>
+                              <option value="Vichada">Vichada</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="municipio" class="form-label">Municipio</label>
+                            <select class="form-select" id="municipio" required>
+                              <option value="" disabled selected>Seleccione el municipio</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="codigoPostal" class="form-label">Código Postal</label>
+                            <input type="text" class="form-control" id="codigoPostal" placeholder="Código postal" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="entidadSalud" class="form-label">Entidad de Salud</label>
+                            <select class="form-select" id="entidadSalud" required>
+                              <option value="" disabled selected>Seleccione la entidad de salud</option>
+                              <option value="Sanitas">Sanitas</option>
+                              <option value="Sura">Sura</option>
+                              <option value="Compensar">Compensar</option>
+                              <option value="Nueva EPS">Nueva EPS</option>
+                              <option value="Coomeva">Coomeva</option>
+                              <option value="Salud Total">Salud Total</option>
+                              <option value="Famisanar">Famisanar</option>
+                              <option value="Cafesalud">Cafesalud</option>
+                              <option value="Medimás">Medimás</option>
+                              <option value="Aliansalud">Aliansalud</option>
+                              <option value="Ecopetrol">Ecopetrol</option>
+                              <option value="Servicio Occidental de Salud (SOS)">Servicio Occidental de Salud (SOS)</option>
+                              <option value="Mutual Ser">Mutual Ser</option>
+                              <option value="Ambuq">Ambuq</option>
+                              <option value="Cafam">Cafam</option>
+                              <option value="Salud Vida">Salud Vida</option>
+                              <option value="Capital Salud">Capital Salud</option>
+                              <option value="Asmet Salud">Asmet Salud</option>
+                              <option value="Comfachocó">Comfachocó</option>
+                              <option value="Comfamiliar Huila">Comfamiliar Huila</option>
+                              <option value="Comfamiliar Nariño">Comfamiliar Nariño</option>
+                              <option value="Comfenalco Antioquia">Comfenalco Antioquia</option>
+                              <option value="Comfenalco Valle">Comfenalco Valle</option>
+                              <option value="Emssanar">Emssanar</option>
+                              <option value="Mallamas">Mallamas</option>
+                              <option value="Mutual Ser EPS">Mutual Ser EPS</option>
+                              <option value="Capresoca">Capresoca</option>
+                              <option value="Comparta">Comparta</option>
+                              <option value="Convida">Convida</option>
+                              <option value="Dusakawi">Dusakawi</option>
+                              <option value="Ecoopsos">Ecoopsos</option>
+                              <option value="Empresas Públicas de Medellín (EPM)">Empresas Públicas de Medellín (EPM)</option>
+                              <option value="EPS Sanitas">EPS Sanitas</option>
+                              <option value="Famisanar EPS">Famisanar EPS</option>
+                              <option value="Comfama">Comfama</option>
+                              <option value="Salud Total EPS">Salud Total EPS</option>
+                              <option value="Savia Salud">Savia Salud</option>
+                            </select>
+                             
+                          </div>
+                        </div>
+                        <!-- Información Médica -->
+                        <div class="tab-pane fade form-section" id="pills-medica" role="tabpanel" aria-labelledby="pills-medica-tab">
+                          <div class="mb-3">
+                            <label for="antecedentes" class="form-label">Antecedentes Médicos</label>
+                            <textarea class="form-control" id="antecedentes" rows="3" placeholder="Describa los antecedentes médicos del paciente"></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <label for="alergias" class="form-label">Alergias</label>
+                            <textarea class="form-control" id="alergias" rows="2" placeholder="Describa las alergias del paciente"></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <label for="medicamentos" class="form-label">Medicamentos Actuales</label>
+                            <textarea class="form-control" id="medicamentos" rows="2" placeholder="Liste los medicamentos actuales que toma el paciente"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Registrar Paciente</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/todolist.js"></script>
+    <!-- endinject -->
+  </body>
+</html>
